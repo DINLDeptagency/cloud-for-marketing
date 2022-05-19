@@ -82,8 +82,8 @@ class MeasurementProtocol {
       const requestOptions = {
         method: 'POST',
         url: `${BASE_URL}${path}`,
-        body: payload,
-        headers: {'User-Agent': 'Tentacles/MeasurementProtocol-v1'}
+        body: payload//,
+        //headers: {'User-Agent': 'Tentacles/MeasurementProtocol-v1'}
       };
       const response = await request(requestOptions);
       /** @type {BatchResult} */ const batchResult = {
